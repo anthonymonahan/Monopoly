@@ -1,6 +1,6 @@
 package edu.ncsu.monopoly;
 
-public abstract class Cell {
+public abstract class Cell implements IOwnable {
 	private boolean available = true;
 	private String name;
 	protected Player theOwner;
@@ -16,6 +16,7 @@ public abstract class Cell {
 	public int getPrice() {
 		return 0;
 	}
+	
 
 	public boolean isAvailable() {
 		return available;
